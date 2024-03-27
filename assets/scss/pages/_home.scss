@@ -127,7 +127,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    // background-color: red;
     gap: 15px;
     p {
       font-size: 1.9rem;
@@ -138,10 +137,7 @@
     }
     .pomodoro_section_image_box {
       width: 40px;
-      // background-color: #848484;
       height: 40px;
-      // border-radius: 50%;
-
       img {
         border-radius: 50%;
         width: 100%;
@@ -153,18 +149,16 @@
 .card_section_background {
   background-color: white;
   .card_section {
+    cursor: pointer;
     min-height: 500px;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
-    // justify-content: center;
     align-items: center;
 
     .card_section_head {
       margin: 20px 0;
       min-height: 100px;
       width: 50%;
-      // background-color: red;
       text-align: center;
       h3 {
         font-size: 30px;
@@ -197,6 +191,7 @@
           padding: 1.3rem;
           .card_blog_firstbox {
             button {
+              cursor: pointer;
               background-color: $bg-color-blue;
               border: none;
               color: white;
@@ -262,10 +257,8 @@
       justify-content: center;
       flex-direction: column;
       max-width: 50%;
-      // padding: 1.5rem;
       div {
         display: flex;
-        // max-width: 23rem;
         width: 100%;
         input {
           width: 100%;
@@ -313,11 +306,9 @@
         flex-wrap: wrap;
         gap: 40px;
         justify-content: center;
-        // align-items: center;
         .card_section_content_box {
           width: 80%;
           .card_image {
-            // width: 100%;
             height: 300px;
           }
         }
@@ -392,14 +383,11 @@
 
   .get_started_section {
     .get_started_section_right_box {
-      // flex-wrap: wrap;
-      // width: 100%;
       gap: 40px;
       flex-direction: column;
       .featured_box {
         width: 100%;
         height: 200px;
-        // text-align: center;
       }
     }
   }
@@ -412,42 +400,28 @@
         flex-wrap: wrap;
         gap: 40px;
         justify-content: center;
-        // align-items: center;
         .card_section_content_box {
           width: 100%;
           .card_image {
-            // width: 100%;
             height: 270px;
           }
         }
       }
     }
   }
-  // .footer_background.container {
-  //   padding: 0 20px;
-  // }
 }
 @media only screen and (max-width: 670px) {
-  // .navbar.container {
-  //   padding: 0 70px;
-  // }
   .get_started_section.container {
     padding: 0 70px;
   }
   .home_contact_background {
     .home_contact {
       .home_contact_left_box {
-        // width: 100%;
-        // display: flex;
-        // flex-direction: column;
         padding: 1rem;
-        // justify-content: center;
         h3 {
           font-size: 1rem;
-          // color: white;
         }
         p {
-          // color: rgba(255, 255, 255, 0.574);
           font-size: 0.7rem;
         }
       }
@@ -463,18 +437,6 @@
   .home_contact_background.container {
     padding: 0 30px;
   }
-  // .footer_background {
-  //   .footer {
-  //     div {
-  //       p {
-  //         font-size: 14px;
-  //       }
-  //       a {
-  //         font-size: 14px;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 @media only screen and (max-width: 617px) {
@@ -494,17 +456,10 @@
   .card_section_background {
     .card_section {
       .card_section_content {
-        // flex-wrap: wrap;
-        // gap: 40px;
-        // justify-content: center;
-        // align-items: center;
         .card_section_content_box {
-          // width: 100%;
           .card_image {
-            // width: 100%;
             height: 210px;
           }
-
           .card_blog_secondbox_footer {
             p {
               font-size: 12px;
@@ -517,9 +472,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-  // .navbar.container {
-  //   padding: 0 30px;
-  // }
   .introductory.container {
     padding: 0 60px;
   }
@@ -546,14 +498,10 @@
       .featured_box {
         height: 180px;
         i {
-          // padding: 0.7rem;
-          // border-radius: 7px;
           font-size: 1.3rem;
         }
         h4 {
           font-size: 1.2rem;
-          // margin: 1rem 0;
-          // font-weight: 600;
         }
         p {
           font-size: 0.8rem;
@@ -597,22 +545,9 @@
     .home_contact {
       .home_contact_right_box {
         button {
-          // padding: 2px 10px;
           font-size: 10px;
         }
       }
     }
   }
-  // .footer_background {
-  //   .footer {
-  //     div {
-  //       p {
-  //         font-size: 10px;
-  //       }
-  //       a {
-  //         font-size: 10px;
-  //       }
-  //     }
-  //   }
-  // }
 }

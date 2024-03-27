@@ -1,3 +1,4 @@
+@use "base";
 .contact_form_background {
   padding: 5rem 0;
   max-width: 70%;
@@ -9,7 +10,7 @@
       text-align: center;
       padding: 2rem 0;
       i {
-        background-color: #0d6dfdd2;
+        background-color: $bg-color-blue;
         color: white;
         padding: 0.75rem;
         font-size: 1.5rem;
@@ -25,21 +26,16 @@
       }
     }
     .form_content {
-      //   background-color: rgb(103, 222, 103);
-      //   min-height: 500px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 2rem 0;
       .input_box {
         display: flex;
-        // align-items: center;
-        // justify-content: center;
         flex-direction: column;
         width: 50%;
         ::placeholder {
           color: black;
-          //   font-size: 15px;
           opacity: 1; /* Firefox */
         }
 
@@ -47,7 +43,6 @@
           /* Edge 12-18 */
           color: black;
         }
-        // background-color: sandybrown;
         gap: 10px;
         input {
           width: 100%;
@@ -67,7 +62,7 @@
           padding: 1rem;
           border: none;
           border-radius: 5px;
-          background-color: #0d6dfdd2;
+          background-color: $bg-color-blue;
           color: white;
         }
       }
@@ -75,7 +70,6 @@
   }
 }
 .contact_icons_background {
-  // background-color: red;
   min-height: 250px;
   display: flex;
   align-items: center;
@@ -96,7 +90,7 @@
       justify-content: center;
       flex-direction: column;
       i {
-        background-color: #0d6dfdd2;
+        background-color: $bg-color-blue;
         color: white;
         padding: 0.75rem;
         font-size: 1.5rem;
@@ -142,7 +136,6 @@
 @media only screen and (max-width: 600px) {
   .contact_icons_background {
     .contact_icons_contain {
-      // flex-wrap: wrap;
       .contact_icons_box {
         width: 90%;
       }
@@ -173,7 +166,6 @@
   }
   .contact_icons_background {
     .contact_icons_contain {
-      // flex-wrap: wrap;
       .contact_icons_box {
         i {
           padding: 0.7rem;

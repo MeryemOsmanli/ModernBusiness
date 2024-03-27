@@ -1,6 +1,5 @@
 // navbar style
 nav {
-  //   color: white;
   background-color: rgb(33, 37, 41);
   width: 100%;
   position: fixed;
@@ -58,7 +57,6 @@ nav {
       border-radius: 5px;
       min-width: 100px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      //   z-index: 1;
     }
     .dropdown-content a {
       color: black;
@@ -81,8 +79,6 @@ nav {
 
 @media only screen and (max-width: 900px) {
   nav {
-    // background-color: white;
-    // color: black;
     .navbar {
       height: 60px;
       ul {
@@ -101,7 +97,6 @@ nav {
         color: gray;
         border: 1px solid gray;
         border-radius: 5px;
-        // gap: 7px;
       }
     }
   }
@@ -121,9 +116,6 @@ nav {
 
       .navbtn {
         padding: 3px 8px;
-        // gap: 5px;
-        // padding: 6px;
-        // gap: 4px;
         font-size: 15px;
       }
     }
