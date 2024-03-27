@@ -1,5 +1,6 @@
+@use "base";
 .introductory_background {
-  background-color: rgb(33, 37, 41);
+  background-color: $bg-color-primary;
 }
 .introductory {
   width: 100%;
@@ -18,7 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    // background-color: sandybrown;
     text-align: left;
 
     h1 {
@@ -34,7 +34,7 @@
       .getstarted_btn {
         padding: 10px 20px;
         border: none;
-        background-color: #0d6dfdd2;
+        background-color: $bg-color-blue;
         color: white;
         border-radius: 0.5rem;
         font-weight: 400;
@@ -46,17 +46,17 @@
       }
       .learnmore_btn {
         padding: 10px 20px;
-        border: 1px solid rgba(255, 255, 255, 0.55);
+        border: 1px solid $border-color-gray;
         color: white;
-        border: 1px solid rgba(255, 255, 255, 0.55);
-        background-color: rgb(33, 37, 41);
+        border: 1px solid $border-color-gray;
+        background-color: $bg-color-primary;
         border-radius: 0.5rem;
         font-size: 20px;
         cursor: pointer;
       }
       .learnmore_btn:hover {
         background-color: white;
-        color: rgb(33, 37, 41);
+        color: $bg-color-primary;
       }
     }
   }
@@ -73,39 +73,27 @@
   }
 }
 .get_started_section {
-  // max-width: 100%;
-  // min-height: 650px;
-  // background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 4rem;
-  // gap: 20px;
   .get_started_section_left_box {
     width: 33%;
     min-height: 500px;
-    // background-color: seashell;
     padding-top: 2rem;
   }
   .get_started_section_right_box {
     width: 66%;
-    // min-height: 500px;
     padding-top: 2rem;
-
-    // background-color: bisque;
     display: flex;
-    // align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     .featured_box {
       width: 40%;
       min-height: 180px;
-      // background-color: aquamarine;
       text-align: left;
-      // padding: 20px;
       i {
-        background-color: #0d6dfdd2;
+        background-color: $bg-color-blue;
         color: white;
         padding: 0.7rem;
         border-radius: 7px;
@@ -115,12 +103,12 @@
         font-size: 1.3rem;
         margin: 1rem 0;
         font-weight: 600;
-        color: #212529;
+        color: $bg-color-primary;
       }
       p {
         font-size: 0.9rem;
         margin: 1rem 0;
-        color: #212529;
+        color: $bg-color-primary;
       }
     }
   }
@@ -209,7 +197,7 @@
           padding: 1.3rem;
           .card_blog_firstbox {
             button {
-              background-color: #0d6dfdd2;
+              background-color: $bg-color-blue;
               border: none;
               color: white;
               padding: 2px 5px;
@@ -250,7 +238,7 @@
     margin: 100px 0;
     max-width: 100%;
     min-height: 150px;
-    background-color: #0d6dfdd2;
+    background-color: $bg-color-blue;
     border-radius: 10px;
     display: flex;
     padding: 1.5rem;
@@ -289,7 +277,7 @@
           padding: 5px 15px;
           border: 1px solid rgba(255, 255, 255, 0.886);
           border-radius: 0 10px 10px 0;
-          background-color: #0d6dfdd2;
+          background-color: $bg-color-blue;
           color: rgba(255, 255, 255, 0.886);
         }
       }
@@ -435,14 +423,14 @@
       }
     }
   }
-  .footer_background.container {
-    padding: 0 20px;
-  }
+  // .footer_background.container {
+  //   padding: 0 20px;
+  // }
 }
 @media only screen and (max-width: 670px) {
-  .navbar.container {
-    padding: 0 70px;
-  }
+  // .navbar.container {
+  //   padding: 0 70px;
+  // }
   .get_started_section.container {
     padding: 0 70px;
   }
@@ -475,18 +463,18 @@
   .home_contact_background.container {
     padding: 0 30px;
   }
-  .footer_background {
-    .footer {
-      div {
-        p {
-          font-size: 14px;
-        }
-        a {
-          font-size: 14px;
-        }
-      }
-    }
-  }
+  // .footer_background {
+  //   .footer {
+  //     div {
+  //       p {
+  //         font-size: 14px;
+  //       }
+  //       a {
+  //         font-size: 14px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media only screen and (max-width: 617px) {
@@ -529,9 +517,9 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar.container {
-    padding: 0 30px;
-  }
+  // .navbar.container {
+  //   padding: 0 30px;
+  // }
   .introductory.container {
     padding: 0 60px;
   }
@@ -615,16 +603,16 @@
       }
     }
   }
-  .footer_background {
-    .footer {
-      div {
-        p {
-          font-size: 10px;
-        }
-        a {
-          font-size: 10px;
-        }
-      }
-    }
-  }
+  // .footer_background {
+  //   .footer {
+  //     div {
+  //       p {
+  //         font-size: 10px;
+  //       }
+  //       a {
+  //         font-size: 10px;
+  //       }
+  //     }
+  //   }
+  // }
 }

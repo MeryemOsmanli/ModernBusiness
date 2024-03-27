@@ -1,0 +1,206 @@
+.pricing_background {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   height i sil
+  //   min-height: 600px;
+  .pricing {
+    width: 100%;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    .pricing_text {
+      min-height: 80px;
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      // background-color: red;
+      h1 {
+        font-size: 2.5rem;
+        color: #212529;
+      }
+      p {
+        color: gray;
+      }
+    }
+    .pricing_contain {
+      min-height: 500px;
+      // background-color: cornflowerblue;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      .pricing_box {
+        width: 31%;
+        min-height: 450px;
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 8px;
+        background-color: white;
+        padding: 2rem;
+        .pricing_box_account_type {
+          min-height: 20px;
+          // background-color: darkkhaki;
+          text-transform: uppercase;
+          display: flex;
+          align-items: end;
+          font-weight: 700;
+          font-size: 15px;
+          color: gray;
+          // justify-content: center;
+        }
+
+        .pricing_box_amount {
+          min-height: 50px;
+          // background-color: teal;
+          .usd_span {
+            font-size: 50px;
+            font-weight: 700;
+          }
+          .mo_span {
+            color: gray;
+          }
+        }
+        .pricing_box_ul {
+          // min-height: 300px;
+          // width: 100%;
+          // background-color: rgb(131, 204, 204);
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          // line-height: 2.5;
+          .fa-check {
+            color: #0d6dfdd2;
+          }
+          ul {
+            li {
+              i {
+                padding: 0.75rem 0.5rem;
+              }
+            }
+          }
+        }
+
+        .pricing_button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 50px;
+
+          button {
+            width: 100%;
+            color: #0d6dfdd2;
+            border: 1px solid #0d6dfdd2;
+            padding: 0.5rem 0;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: #0d6dfdd2;
+            color: white;
+          }
+        }
+        .pricing_blue_button {
+          button {
+            background-color: #0d6dfdd2;
+            color: white;
+          }
+          button:hover {
+            background-color: #0d6dfd;
+          }
+        }
+      }
+    }
+  }
+}
+.type_black {
+  color: black;
+}
+.gray-li {
+  color: gray;
+}
+.strong {
+  font-weight: bold;
+}
+.yellow {
+  color: #ffd43b;
+}
+@media only screen and (max-width: 1200px) {
+  .pricing.container {
+    padding: 9rem 50px 0 50px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .pricing_background {
+    .pricing {
+      .pricing_contain {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .pricing_box {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pricing.container {
+    padding: 5rem 20px 0 20px;
+  }
+  .pricing_background {
+    .pricing {
+      .pricing_text {
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .pricing_contain {
+        .pricing_box {
+          width: 100%;
+          .pricing_box_amount {
+            .usd_span {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pricing_background {
+    .pricing {
+      .pricing_text {
+        h1 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      .pricing_contain {
+        .pricing_box {
+          // width: 100%;
+          .pricing_box_amount {
+            .usd_span {
+              font-size: 30px;
+            }
+          }
+          .pricing_box_ul {
+            li {
+              i {
+                padding: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

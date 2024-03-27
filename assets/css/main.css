@@ -36,6 +36,27 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 770px) {
+  .footer_background .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .footer_background .footer div p {
+    font-size: 14px;
+  }
+  .footer_background .footer div a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer_background .footer div p {
+    font-size: 10px;
+  }
+  .footer_background .footer div a {
+    font-size: 10px;
+  }
+}
 nav {
   background-color: rgb(33, 37, 41);
   width: 100%;
@@ -131,6 +152,11 @@ nav .navbar .dropdown:hover .dropdown-content {
     border-radius: 5px;
   }
 }
+@media only screen and (max-width: 670px) {
+  .navbar.container {
+    padding: 0 70px;
+  }
+}
 @media only screen and (max-width: 600px) {
   nav .navbar {
     height: 40px;
@@ -141,6 +167,11 @@ nav .navbar .dropdown:hover .dropdown-content {
   nav .navbar .navbtn {
     padding: 3px 8px;
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar.container {
+    padding: 0 30px;
   }
 }
 @media only screen and (max-width: 405px) {
@@ -545,16 +576,64 @@ nav .navbar .dropdown:hover .dropdown-content {
 }
 
 .contact_icons_background {
-  background-color: red;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_icons_background .contact_icons_contain {
+  width: 100%;
   min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contact_icons_background .contact_icons_contain .contact_icons_box {
+  width: 25%;
+  min-height: 200px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact_icons_background .contact_icons_contain .contact_icons_box i {
+  background-color: rgba(13, 109, 253, 0.8235294118);
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+.contact_icons_background .contact_icons_contain .contact_icons_box h5 {
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+.contact_icons_background .contact_icons_contain .contact_icons_box p {
+  color: gray;
 }
 
+@media only screen and (max-width: 1200px) {
+  .contact_icons_background .contact_icons_contain.container {
+    padding: 0 50px;
+  }
+  .contact_icons_background .contact_icons_contain {
+    flex-wrap: wrap;
+  }
+  .contact_icons_background .contact_icons_contain .contact_icons_box {
+    width: 40%;
+  }
+}
 @media only screen and (max-width: 900px) {
   .contact_form_background {
     max-width: 90%;
   }
   .contact_form_background .contact_form .form_content .input_box {
     width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact_icons_background .contact_icons_contain .contact_icons_box {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -572,6 +651,178 @@ nav .navbar .dropdown:hover .dropdown-content {
   .contact_form_background .contact_form .contact_form_text p {
     font-size: 15px;
     color: gray;
+  }
+  .contact_icons_background .contact_icons_contain .contact_icons_box i {
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+  .contact_icons_background .contact_icons_contain .contact_icons_box h5 {
+    font-size: 15px;
+    padding: 0.5rem 0;
+  }
+  .contact_icons_background .contact_icons_contain .contact_icons_box p {
+    font-size: 12px;
+  }
+}
+.pricing_background {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing_background .pricing {
+  width: 100%;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+}
+.pricing_background .pricing .pricing_text {
+  min-height: 80px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+.pricing_background .pricing .pricing_text h1 {
+  font-size: 2.5rem;
+  color: #212529;
+}
+.pricing_background .pricing .pricing_text p {
+  color: gray;
+}
+.pricing_background .pricing .pricing_contain {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.pricing_background .pricing .pricing_contain .pricing_box {
+  width: 31%;
+  min-height: 450px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 8px;
+  background-color: white;
+  padding: 2rem;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_account_type {
+  min-height: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: end;
+  font-weight: 700;
+  font-size: 15px;
+  color: gray;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_amount {
+  min-height: 50px;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_amount .usd_span {
+  font-size: 50px;
+  font-weight: 700;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_amount .mo_span {
+  color: gray;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_ul .fa-check {
+  color: rgba(13, 109, 253, 0.8235294118);
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_box_ul ul li i {
+  padding: 0.75rem 0.5rem;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_button button {
+  width: 100%;
+  color: rgba(13, 109, 253, 0.8235294118);
+  border: 1px solid rgba(13, 109, 253, 0.8235294118);
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_button button:hover {
+  background-color: rgba(13, 109, 253, 0.8235294118);
+  color: white;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_blue_button button {
+  background-color: rgba(13, 109, 253, 0.8235294118);
+  color: white;
+}
+.pricing_background .pricing .pricing_contain .pricing_box .pricing_blue_button button:hover {
+  background-color: #0d6dfd;
+}
+
+.type_black {
+  color: black;
+}
+
+.gray-li {
+  color: gray;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.yellow {
+  color: #ffd43b;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pricing.container {
+    padding: 9rem 50px 0 50px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .pricing_background .pricing .pricing_contain {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .pricing_background .pricing .pricing_contain .pricing_box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pricing.container {
+    padding: 5rem 20px 0 20px;
+  }
+  .pricing_background .pricing .pricing_text h1 {
+    font-size: 28px;
+  }
+  .pricing_background .pricing .pricing_text p {
+    font-size: 15px;
+  }
+  .pricing_background .pricing .pricing_contain .pricing_box {
+    width: 100%;
+  }
+  .pricing_background .pricing .pricing_contain .pricing_box .pricing_box_amount .usd_span {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pricing_background .pricing .pricing_text h1 {
+    font-size: 25px;
+  }
+  .pricing_background .pricing .pricing_text p {
+    font-size: 12px;
+  }
+  .pricing_background .pricing .pricing_contain .pricing_box .pricing_box_amount .usd_span {
+    font-size: 30px;
+  }
+  .pricing_background .pricing .pricing_contain .pricing_box .pricing_box_ul li i {
+    padding: 0.5rem;
   }
 }
 .introductory_background {
@@ -951,14 +1202,8 @@ nav .navbar .dropdown:hover .dropdown-content {
   .card_section_background .card_section .card_section_content .card_section_content_box .card_image {
     height: 270px;
   }
-  .footer_background.container {
-    padding: 0 20px;
-  }
 }
 @media only screen and (max-width: 670px) {
-  .navbar.container {
-    padding: 0 70px;
-  }
   .get_started_section.container {
     padding: 0 70px;
   }
@@ -976,12 +1221,6 @@ nav .navbar .dropdown:hover .dropdown-content {
   }
   .home_contact_background.container {
     padding: 0 30px;
-  }
-  .footer_background .footer div p {
-    font-size: 14px;
-  }
-  .footer_background .footer div a {
-    font-size: 14px;
   }
 }
 @media only screen and (max-width: 617px) {
@@ -1003,9 +1242,6 @@ nav .navbar .dropdown:hover .dropdown-content {
   }
 }
 @media only screen and (max-width: 480px) {
-  .navbar.container {
-    padding: 0 30px;
-  }
   .introductory.container {
     padding: 0 60px;
   }
@@ -1056,12 +1292,6 @@ nav .navbar .dropdown:hover .dropdown-content {
     height: 150px;
   }
   .home_contact_background .home_contact .home_contact_right_box button {
-    font-size: 10px;
-  }
-  .footer_background .footer div p {
-    font-size: 10px;
-  }
-  .footer_background .footer div a {
     font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
